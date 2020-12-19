@@ -1,8 +1,3 @@
-# Oliver Leiriao
-# 260784495
-# COMP 273
-# Assignment 4
-
 			.data
 bank_array: 		.word 0, 0, 0, 0, 0	# this array holds banking details
 bank_history:		.word 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
