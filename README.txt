@@ -31,10 +31,11 @@
 # Startup:
 #################
 #    - Initial startup will require compiling code in the MARS simulator. 
-#    - Open the KEYBOARD AND DISPLAY MMIO SIMULATOR (which can be found under /tools/). Be sure to "CONNECT TO MIPS" 
-#      after compiling BUT BEFORE the running program.
+#    - Open the KEYBOARD AND DISPLAY MMIO SIMULATOR (which can be found under /tools/). 
+#      Be sure to "CONNECT TO MIPS" after compiling BUT BEFORE the running program.
 #    - Once code is compiled and MMIO Simulator is connected, run the application.
-#    - Output will appear in the standard I/O, however input should be made into the MMIO Simulator keyboard input field.
+#    - Output will appear in the standard I/O, however input should be made into the MMIO Simulator 
+#      keyboard input field.
 
 #################
 # COMMANDS:
@@ -43,20 +44,31 @@
 #         upon an ENTER keypress. Incorrectly formatted commands will result in an error message.
 #   
 #   QT                       ---> Quits program
-#   CH (Acc#) ($Bal)         ---> Opens a chequing account, with the specified ID #, and with the specified starting Balance
-#   SV (Acc#) ($Bal)         ---> Opens a savings account, with the specified ID #, and with the specified starting Balance
+#
+#   CH (Acc#) ($Bal)         ---> Opens a chequing account, with the specified ID #, and with the 
+#                                 specified starting Balance
+#
+#   SV (Acc#) ($Bal)         ---> Opens a savings account, with the specified ID #, and with the 
+#                                 specified starting Balance
+#
 #   DE (Acc#) ($Bal)         ---> Deposits balance into specified account. If account DNE, throws error.
-#   WT (Acc#) ($Bal)         ---> Withdraws balance from specified account. If account DNE, throws error. If withdrawn from savings, 
-#                                 a 5% fee is also deducted.
-#   LN ($Bal)                ---> Takes out a loan of the specified amount. Total sum of balances must exceed $10,000 
-#                                 to qualify for a loan.
-#   TR (Acc#) (Acc#) ($Bal)  ---> Transfers balance from first acc specified to second. If no second acc# isn't specified, 
-#                                 balance is deducted from loan.
-#   CL (Acc#)                ---> Closes specified account. Balance is shifted to other account, if it exists, else pays off 
-#                                 outstanding debt, otherwise is lost.
+#
+#   WT (Acc#) ($Bal)         ---> Withdraws balance from specified account. If account DNE, throws error. 
+#                                 If withdrawn from savings, a 5% fee is also deducted.
+#
+#   LN ($Bal)                ---> Takes out a loan of the specified amount. Total sum of balances must 
+#                                 exceed $10,000 to qualify for a loan.
+#
+#   TR (Acc#) (Acc#) ($Bal)  ---> Transfers balance from first acc specified to second. If no second acc# 
+#                                 isn't specified, balance is deducted from loan.
+#
+#   CL (Acc#)                ---> Closes specified account. Balance is shifted to other account, if it exists, 
+#                                 else pays off outstanding debt, otherwise is lost.
+#
 #   BL (Acc#)                ---> Prints out current bank balance of specified account. If account DNE, throws error.
-#   QH (#[1-5])              ---> Prints out account history of last specified number of transactions (max 5). Ex. QH 3 prints out 
-#                                 the last 3 transaction summaries.
+#
+#   QH (#[1-5])              ---> Prints out account history of last specified number of transactions (max 5). 
+#                                 Ex. QH 3 prints out the last 3 transaction's summaries.
 #
 ########################################################################################
 ########################################################################################
