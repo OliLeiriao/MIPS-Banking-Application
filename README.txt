@@ -65,7 +65,8 @@
 #   CL (Acc#)                ---> Closes specified account. Balance is shifted to other account, if it exists, 
 #                                 else pays off outstanding debt, otherwise is lost.
 #
-#   BL (Acc#)                ---> Prints out current bank balance of specified account. If account DNE, throws error.
+#   BL (Acc#)                ---> Prints out current bank balance of specified account. 
+#                                 If account DNE, throws error.
 #
 #   QH (#[1-5])              ---> Prints out account history of last specified number of transactions (max 5). 
 #                                 Ex. QH 3 prints out the last 3 transaction's summaries.
